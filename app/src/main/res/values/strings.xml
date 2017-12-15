@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Social Networks Sample</string>
+
+    <string-array name="networks">
+        <item>Facebook</item>
+    </string-array>
+
+    <!--Facebook-->
+    <string name="facebook_app_id">251452198672333</string>
+    <string name="fb_login_protocol_scheme">fb251452198672333</string>
+    <string name="fb_login_success">Facebook login success</string>
+    <string name="fb_login_cancel">Facebook login cancel</string>
+    <string name="fb_login_error">Facebook login error</string>
+
+</resources>
