@@ -18,11 +18,17 @@ public class MainActivity extends AppCompatActivity {
 
     @OnItemClick(R.id.lst_networks)
     public void onNetworkClick(int position) {
+        Intent intent = null;
         switch (position) {
             case 0:
-                Intent intent = new Intent(this, FacebookLoginActivity.class);
-                startActivity(intent);
+                intent = new Intent(this, FacebookLoginActivity.class);
                 break;
+            case 1:
+                intent = new Intent(this, TwitterLoginActivity.class);
+                break;
+        }
+        if (intent != null) {
+            startActivity(intent);
         }
     }
 }

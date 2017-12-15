@@ -86,19 +86,18 @@ public class FacebookLoginActivity extends AppCompatActivity {
                     if(response.getError() != null) {
                         Toast.makeText(
                                 FacebookLoginActivity.this,
-                                "not logged",
-                                Toast.LENGTH_LONG
+                                "Not logged in on Facebook",
+                                Toast.LENGTH_SHORT
                         ).show();
                     }
                     else if (response.getJSONObject().getBoolean("success")) {
-                        LoginManager.getInstance().logOut();
-                        // updateUI();?
+                         updateUI();
                     }
                 } catch (JSONException ex) { /* no op */ }
             }
         };
         GraphRequest request = new GraphRequest(AccessToken.getCurrentAccessToken(),
-                "me/permissions", new Bundle(), HttpMethod.DELETE, callback);
+                "me/permissions", new Bundle(), HttpMethod.GET, callback);
         request.executeAsync();
 
         updateUI();

@@ -3,6 +3,7 @@
 
     <string-array name="networks">
         <item>Facebook</item>
+        <item>Twitter</item>
     </string-array>
 
     <!--Facebook-->
@@ -11,5 +12,11 @@
     <string name="fb_login_success">Facebook login success</string>
     <string name="fb_login_cancel">Facebook login cancel</string>
     <string name="fb_login_error">Facebook login error</string>
+
+    <!--Twitter-->
+    <string name="com.twitter.sdk.android.CONSUMER_KEY">0wX2P1ecBFZKlQtTXYJKBwJoC</string>
+    <string name="com.twitter.sdk.android.CONSUMER_SECRET">JK3WQXjdLcZHtL6KozGaHRTLhqyi6IAfqsNJC8XTY92rfCgH51</string>
+    <string name="twitter_login_success">Twitter login success</string>
+    <string name="twitter_login_error">Twitter login error</string>
 
 </resources>
